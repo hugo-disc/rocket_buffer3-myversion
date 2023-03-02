@@ -37,10 +37,14 @@ local function loginIntoAccount(_, login, senha)
 
     local exists = exists(login)
 
+    if (logged) then
+        return print('[X] Você já está logado em nosso sistema!')
+    end
+
     if (not exists) then
         return print('[X] Conta inexistente')
     end
-
+    
     local accountFind = users[exists] -- indexando a conta encontrada na variável accountFind para que fique melhor 
 
     if(accountFind.password ~= senha) then -- verificando se a conta com o login informado, possui a senha informada
@@ -83,3 +87,8 @@ local function logoutAccount()
     return
 end
 addCommandHandler('blogout', logoutAccount)
+
+local function getUsers()
+    return print('[U] Atualmente possuimos ' ..#users.. ' usuários registrados!')
+end
+addCommandHandler('busers', getUsers)
