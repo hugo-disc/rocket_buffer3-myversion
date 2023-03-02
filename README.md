@@ -1,3 +1,4 @@
+
 # Account Management - SYSTEM
 
  **Minha versão desenvolvida para o** `Buffer 3` **da Rocket Discover;**
@@ -7,3 +8,6 @@
 - `/blogin (login) (senha)` - Loga o client na conta com os parâmetros inseridos, caso ela exista;
 - `/blogout` - "Desloga" o client de sua conta, e remove a mesma da tabela;
 - `/busers` - Retorna a quantidade de usuários registrados.
+
+# ☁️ Dados salvos
+- Login, senha, discord e e-mail.
